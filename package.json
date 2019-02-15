@@ -1,0 +1,30 @@
+{
+  "name": "Checos-Coffee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelCheco/Checos-Coffee.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelCheco/Checos-Coffee/issues"
+  },
+  "homepage": "https://github.com/MichaelCheco/Checos-Coffee#readme",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^6.2.0",
+    "graphql-yoga": "^1.17.4",
+    "jsonwebtoken": "^8.4.0",
+    "prisma-client-lib": "^1.26.6",
+    "stripe": "^6.25.1"
+  }
+}
