@@ -1,4 +1,5 @@
 const { GraphQLServer } = require('graphql-yoga');
+require('dotenv').config({ path: 'variables.env' });
 
 const typeDefs = `
   type Query {
