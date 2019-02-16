@@ -12,8 +12,16 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"apollo-boost": "^0.1.28",
+		"apollo-client": "^2.4.13",
+		"babel-plugin-styled-components": "^1.10.0",
+		"graphql": "^14.1.1",
+		"graphql-tag": "^2.10.1",
 		"next": "^8.0.1",
+		"next-with-apollo": "^3.3.2",
 		"react": "^16.8.2",
-		"react-dom": "^16.8.2"
+		"react-apollo-hooks": "^0.4.0",
+		"react-dom": "^16.8.2",
+		"styled-components": "^4.1.3"
 	}
 }
