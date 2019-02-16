@@ -1,7 +1,2 @@
-variables.env*
-dist
-package-lock.json
+.next
 node_modules
-.idea
-.vscode
-*.log
