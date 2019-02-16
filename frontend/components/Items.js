@@ -1,9 +1,11 @@
 import gql from 'graphql-tag';
 import { useQuery } from 'react-apollo-hooks';
+import Item from './Item';
 
 const ALL_ITEMS_QUERY = gql`
 	{
 		items {
+			id
 			title
 			description
 			price
@@ -25,7 +27,7 @@ export default function Items() {
 	return (
 		<ul>
 			{data.items.map(item => (
-				<h3>{item.title}</h3>
+				<Item item={item} key={item.id} />
 			))}
 		</ul>
 	);
