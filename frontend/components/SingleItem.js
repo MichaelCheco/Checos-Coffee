@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Router from 'next/router';
 import gql from 'graphql-tag';
 import { useQuery } from 'react-apollo-hooks';
-
+import DeleteItem from './DeleteItem';
 const SINGLE_ITEM_QUERY = gql`
 	query SINGLE_ITEM_QUERY($id: ID!) {
 		item(id: $id) {
@@ -35,6 +35,7 @@ const SingleItem = props => {
 				}}>
 				<button>Update Item</button>
 			</Link>
+			<DeleteItem id={props.id}>Delete This Item</DeleteItem>
 		</div>
 	);
 };

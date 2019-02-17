@@ -32,3 +32,4 @@ export default function Items() {
 		</ul>
 	);
 }
+export { ALL_ITEMS_QUERY };
