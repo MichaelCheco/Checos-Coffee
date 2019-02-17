@@ -12,6 +12,9 @@ const Mutation = {
 			data: updates,
 		});
 	},
+	deleteItem: (parent, { id }, ctx, info) => {
+		return ctx.prisma.deleteItem({ id });
+	},
 };
 
 module.exports = {
