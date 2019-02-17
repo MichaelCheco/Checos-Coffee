@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import Router from 'next/router';
 import gql from 'graphql-tag';
 import { useQuery } from 'react-apollo-hooks';
 
@@ -23,7 +25,18 @@ const SingleItem = props => {
 	if (error) {
 		return `Error! ${error.message}`;
 	}
-	return <h3>{data.item.title}</h3>;
+	return (
+		<div>
+			<h3>{data.item.title}</h3>
+			<Link
+				href={{
+					pathname: '/update',
+					query: { id: props.id },
+				}}>
+				<button>Update Item</button>
+			</Link>
+		</div>
+	);
 };
 
 export default SingleItem;

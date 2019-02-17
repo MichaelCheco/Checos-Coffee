@@ -10,6 +10,7 @@ const server = new GraphQLServer({
 server.start(
 	{
 		cors: {
+			credentials: true,
 			origin: 'http://localhost:3000',
 		},
 	},

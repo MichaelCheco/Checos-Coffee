@@ -7,5 +7,13 @@ export default withApollo(
 		new ApolloClient({
 			uri: GRAPHQL_URL,
 			cache: new InMemoryCache().restore(initialState || {}),
+			request: operation => {
+				operation.setContext({
+					fetchOptions: {
+						credentials: 'include',
+					},
+					headers,
+				});
+			},
 		})
 );
