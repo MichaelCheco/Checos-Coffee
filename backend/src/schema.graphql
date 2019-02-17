@@ -1,8 +1,11 @@
 type Query {
-	items(skip: Int, first: Int): [Item!]!
+	items(skip: Int, first: Int, filter: String): Feed!
 	item(id: ID!): Item
 }
-
+type Feed {
+	items: [Item!]!
+	count: Int!
+}
 type Mutation {
 	createItem(
 		title: String
