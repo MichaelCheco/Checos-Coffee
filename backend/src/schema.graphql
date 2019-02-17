@@ -1,5 +1,5 @@
 type Query {
-	items: [Item!]!
+	items(skip: Int, first: Int): [Item!]!
 	item(id: ID!): Item
 }
 
