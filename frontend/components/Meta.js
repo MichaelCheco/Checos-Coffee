@@ -7,7 +7,7 @@ const Meta = () => (
 		<link rel="shortcut icon" href="/static/favicon.png" />
 		<link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
 		<link
-			href="https://fonts.googleapis.com/css?family=Lora|Muli|Sarabun"
+			href="https://fonts.googleapis.com/css?family=Lora|Muli|Sarabun|Raleway"
 			rel="stylesheet"
 		/>
 		<title>Michael Checo!</title>
