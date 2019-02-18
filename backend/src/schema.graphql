@@ -16,6 +16,8 @@ type Mutation {
 	): Item!
 	updateItem(id: ID!, title: String, description: String, price: Int): Item
 	deleteItem(id: ID!): Item
+	# signup(email: String!, password: String!, name: String!): User!
+	# signin(email: String!, password: String!): User!
 }
 type Item {
 	id: ID!
@@ -25,3 +27,8 @@ type Item {
 	largeImage: String
 	price: Int!
 }
+# type User {
+# 	id: ID!
+# 	name: String!
+# 	email: String!
+# }

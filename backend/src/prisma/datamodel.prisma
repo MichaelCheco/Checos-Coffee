@@ -7,3 +7,11 @@ type Item {
 	price: Int!
 	createdAt: DateTime!
 }
+# type User {
+# 	id: ID! @unique
+# 	name: String!
+# 	email: String! @unique
+# 	password: String!
+# 	resetToken: String
+# 	resetTokenExpiry: Float
+# }

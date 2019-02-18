@@ -1,5 +1,4 @@
-import Items from '../components/Items';
+import Home from '../components/Home';
 
-const AllItems = () => <Items />;
-
-export default AllItems;
+const HomePage = () => <Home />;
+export default HomePage;
