@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Meta from './Meta';
+import Header from './Header';
 const theme = {
 	red: '#FF0000',
 	black: '#393939',
@@ -10,6 +11,10 @@ const theme = {
 	maxWidth: '1500px',
 	bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
 };
+const StyledPage = styled.div`
+	background: white;
+	color: ${props => props.theme.black};
+`;
 export const GlobalStyle = createGlobalStyle`
 /* @font-face {
     font-family: 'radnika_next';
@@ -39,17 +44,19 @@ export const GlobalStyle = createGlobalStyle`
     }
 `;
 const Inner = styled.div`
-	max-width: ${props => props.theme.maxWidth};
-	margin: 0 auto;
-	padding: 2rem;
+	/* max-width: ${props => props.theme.maxWidth};
+	margin: 0 auto; */
 `;
 export default class Page extends Component {
 	render() {
 		return (
 			<ThemeProvider theme={theme}>
-				<GlobalStyle />
-				<Meta />
-				<Inner>{this.props.children}</Inner>
+				<StyledPage>
+					<GlobalStyle />
+					<Meta />
+					<Header />
+					<Inner>{this.props.children}</Inner>
+				</StyledPage>
 			</ThemeProvider>
 		);
 	}
